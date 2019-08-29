@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <div id="audio-div">
+    <audio id="boomsound" src="./sounds/boom.wav"></audio>
+    <audio id="clapsound" src="./sounds/clap.wav"></audio>
+    <audio id="hihatsound" src="./sounds/hihat.wav"></audio>
+    <audio id="kicksound" src="./sounds/kick.wav"></audio>
+    <audio id="openhatsound" src="./sounds/openhat.wav"></audio>
+    <audio id="ridesound" src="./sounds/ride.wav"></audio>
+    <audio id="snaresound" src="./sounds/snare.wav"></audio>
+    <audio id="tinksound" src="./sounds/tink.wav"></audio>
+    <audio id="tomsound" src="./sounds/tom.wav"></audio>
+    </div>
+
+     <div id="title-box">
+         <h1 id="title">Javascript Drum Set</h1>
+     </div>
+
+     <div id="keyBoard">
+        <h1 class="letters">Q</h1>
+        <h1 class="letters">W</h1>
+        <h1 class="letters">E</h1>
+        <h1 class="letters">R</h1>
+        <h1 class="letters">A</h1>
+        <h1 class="letters">S</h1>
+        <h1 class="letters">D</h1>
+        <h1 class="letters">F</h1>
+        <h1 class="letters">Z</h1>
+     </div>
+
+     <div id="button-box">
+         <button onclick="playboom()" type="button" id="boom" class="sound">Boom</button>
+         <button onclick="playclap()" type="button" id="clap" class="sound">Clap</button>
+         <button onclick="playhihat()" type="button" id="hihat" class="sound">Hihat</button>
+         <button onclick="playkick()" type="button" id="kick" class="sound">Kick</button>
+         <button onclick="playopen()" type="button" id="openhat" class="sound">Openhat</button>
+         <button onclick="playride()" type="button" id="ride" class="sound">Ride</button>
+         <button onclick="playsnare()" type="button" id="snare" class="sound">Snare</button>
+         <button onclick="playtink()" type="button" id="tink" class="sound">Tink</button>
+         <button onclick="playtom()" type="button" id="tom" class="sound">Tom</button>
+         
+     </div>
+
+     <div id="drum-box">
+         <img id="drum-kit" src="https://www.pinclipart.com/picdir/big/216-2169129_drum-set-clipart-png-transparent-png.png")>
+     </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
