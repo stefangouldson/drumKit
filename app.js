@@ -25,6 +25,7 @@ function playtom(){xto.play();}
 
 window.addEventListener("keydown",checkKeyPressed);
 
+//object contain keycodes tied to sounds
 const sound={
 81:"./sounds/boom.wav",
 87:"./sounds/clap.wav",
@@ -37,10 +38,11 @@ const sound={
 90:"./sounds/tom.wav",
 }
 
+
 function checkKeyPressed(i){
-    i.preventDefault;
-    let keyCode=i.which;
-    let theSound= new Audio(sound[keyCode]);
-    theSound.play();
-    action[keyCode]();
+    i.preventDefault;                           //stops default action when a is pressed
+    let keyCode=i.which;                        //keycode of whats pressed
+    let theSound= new Audio(sound[keyCode]);    //passes keycode and uses it to id which sound
+    theSound.play();                            //play sound
+    action[keyCode]();                          //set/return the value
 };

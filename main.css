@@ -1,4 +1,4 @@
-
+/* background for body */
 body{
     margin: 0%;
     padding: 0%;
@@ -8,6 +8,7 @@ body{
     background-size: cover;
 }
 
+/* title work */
 #title-box{
     display: flex;
     justify-content: center;
@@ -55,6 +56,7 @@ body{
     width: 60%
 }
 
+/* how the button looks normally, hover and pressed */
 .sound{
     width: 100px;
     height: 40px;
